@@ -236,6 +236,8 @@ Note that different ECS implementations may or may not choose to implement this 
 
 ### How do I specify parent-child relationships in ECS?
 This depends on the ECS framework. In flecs, you can add "Container" entities to entities.
+In some ECS implementations the scene-graph/hierarchy is seperate and thus simply adding an entity
+as a child to another ECS node is all that is required. 
 
 ### How many entities, components and systems does a typical application have?
 This highly depends on the application. Anywhere between a dozen, hundreds, or maybe even thousands of components and systems. The number of entities is tightly coupled with how many "things" your game or simulation has.
